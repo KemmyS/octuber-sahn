@@ -1,0 +1,17 @@
+@mixin responsive-grid {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  @mixin responsive-image{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+  }
