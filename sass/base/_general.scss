@@ -1,2 +1,23 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+.container{
+    gap: 40px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.intro{
+    z-index: 2;
+}
+.intro-img{
+    @include responsive-image;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.nav-link:hover{
+    background-color:#D3B5E5;
+box-shadow: $box-shadow-lg;
+    color: white;
+}
+.main-header{
+    margin-top: 20px;
+}
