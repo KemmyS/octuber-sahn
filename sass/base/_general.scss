@@ -26,11 +26,9 @@ box-shadow: $box-shadow-lg;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-area: about;
-    padding: 5px;
-    gap: 10px;
     background-color: hsla(198, 53%, 85%, 0.242);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin-top: 20px;
+    
 }
 .portfolio{
     grid-area: portfolio;
@@ -41,10 +39,24 @@ box-shadow: $box-shadow-lg;
 .contact{
     grid-area: contact;
 }
-.modal{
-    display: none;
-}
 
 .badge{
     background-color:#C8A2C8;
+    cursor: pointer;
+}
+
+.overlay {
+    // display: none;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
 }
