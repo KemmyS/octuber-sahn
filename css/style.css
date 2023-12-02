@@ -12,11 +12,22 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-.nav-link:hover,
-.close-btn:hover {
+.container {
+  gap: 60px;
+}
+
+.main-nav {
+  padding-top: 10px;
+}
+
+.nav-link:hover {
   background-color: #D3B5E5;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: white;
+}
+
+.close-btn:hover {
+  color: #0d6efd;
 }
 
 .main-content {
@@ -26,11 +37,12 @@
   gap: 10px;
   padding: 15px;
   margin: 0 auto;
-  grid-template-areas: "home" "about" "portfolio" "skills" "contact";
+  grid-template-areas: "nav-intro" "about" "portfolio" "skills" "contact";
 }
 
 .home {
   grid-area: home;
+  padding-bottom: 10px;
 }
 
 .about {
@@ -54,11 +66,19 @@
 }
 
 .badge {
-  background-color: #C8A2C8;
+  background-color: #B9A3D1;
   cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.badge:hover {
+  background-color: #0d6efd;
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .overlay {
+  display: none;
   height: 100vh;
   position: fixed;
   inset: 0;
@@ -89,6 +109,14 @@
   cursor: pointer;
   font-size: 25px;
   transition: all 200ms;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 *,
