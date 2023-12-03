@@ -52,9 +52,7 @@ color: #0d6efd;
 .education-skills{
     grid-area: education-skills;
 }
-.skills{
-    grid-area: skills;
-}
+
 .contact{
     grid-area: contact;
 }
@@ -133,6 +131,7 @@ grid-template-columns: 1fr;
     height: 300px;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // transform: translateX(-130px);
   }
 
   .grad-pic{
@@ -145,8 +144,7 @@ grid-template-columns: 1fr;
 
   .education{
     position: relative;
-    transform: translateY(100px);
-    // transform: rotate(1deg);
+    transform: rotate(-5deg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
@@ -157,16 +155,39 @@ grid-template-columns: 1fr;
 
   }
 
+  .profile-icon{
+    left: 0px;;
+    
+  }
+  .education-icon{
+    right: 0px;
+    
+  }
+
   .fa-paperclip{
     position: absolute;
     top: 0px;
-    left: 0px;
+    
     cursor: pointer;
     font-size: 35px;
     transition: all 200ms;
     color: #D3B5E5;
   }
   .profile{
-    transform: translateX(80px);
+    transform: rotate(5deg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
+
+  .card{
+    background-color:hsl(65, 44%, 90%) ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .skills{
+    gap: 20px;
+}
+
+.education-profile{
+    position: relative;
+    gap: 20px;
+}
