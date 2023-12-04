@@ -46,9 +46,7 @@ color: #0d6efd;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     
 }
-.portfolio{
-    grid-area: portfolio;
-}
+
 .education-skills{
   gap: 20px;
     grid-area: education-skills;
@@ -178,7 +176,7 @@ grid-template-columns: 1fr;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
-  .card{
+  .skills-card{
     position: relative;
     background-color:hsl(65, 44%, 90%) ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -189,6 +187,7 @@ grid-template-columns: 1fr;
     top: 0;
     padding-top: 5px;
     color: #0d6efd;
+    
   }
 
   .skills{
@@ -216,4 +215,36 @@ translate: -30px -80px;
 }
 .team-player{
 translate: 30px -80px;
+}
+
+.portfolio{
+  grid-area: portfolio;
+  position: relative;
+  
+  }
+
+.portfolio-grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-template-rows: repeat(2,1fr) ;
+  max-width: 1024px;
+  margin: 350px auto;
+  gap: 30px;
+  // transform: translateY(300px);
+}
+
+.employee-directory{
+background-color: #AE388B;
+
+}
+.webApp-dashboard{
+  background-color: #0d6efd;
+}
+
+.game{
+  background-color: aqua;
+}
+
+.product-page{
+  background-color: orangered;
 }

@@ -33,7 +33,7 @@
   gap: 40px;
   padding: 15px;
   margin: 0 auto;
-  grid-template-areas: "nav-intro" "about" "education-skills";
+  grid-template-areas: "nav-intro" "about" "education-skills" "portfolio";
 }
 
 .nav-intro {
@@ -50,10 +50,6 @@
   grid-area: about;
   background-color: hsla(198, 53%, 85%, 0.242);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.portfolio {
-  grid-area: portfolio;
 }
 
 .education-skills {
@@ -185,7 +181,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.card {
+.skills-card {
   position: relative;
   background-color: hsl(65, 44%, 90%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -219,6 +215,36 @@
 
 .team-player {
   translate: 30px -80px;
+}
+
+.portfolio {
+  grid-area: portfolio;
+  position: relative;
+}
+
+.portfolio-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1024px;
+  margin: 350px auto;
+  gap: 30px;
+}
+
+.employee-directory {
+  background-color: #AE388B;
+}
+
+.webApp-dashboard {
+  background-color: #0d6efd;
+}
+
+.game {
+  background-color: aqua;
+}
+
+.product-page {
+  background-color: orangered;
 }
 
 *,
