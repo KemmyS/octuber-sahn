@@ -12,10 +12,6 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-.container {
-  gap: 60px;
-}
-
 .main-nav {
   padding-top: 10px;
 }
@@ -34,7 +30,7 @@
   display: grid;
   max-width: 1024px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 40px;
   padding: 15px;
   margin: 0 auto;
   grid-template-areas: "nav-intro" "about" "education-skills";
@@ -61,6 +57,7 @@
 }
 
 .education-skills {
+  gap: 20px;
   grid-area: education-skills;
 }
 
@@ -162,8 +159,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.education-heading,
-.profile-heading {
+.edu-headings {
   text-shadow: 3px 3px 20px hsl(216, 98%, 70%), -2px 1px 30px hsl(216, 98%, 70%);
 }
 
@@ -190,17 +186,39 @@
 }
 
 .card {
+  position: relative;
   background-color: hsl(65, 44%, 90%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.skills {
-  gap: 20px;
+.card-pin {
+  position: absolute;
+  top: 0;
+  padding-top: 5px;
+  color: #0d6efd;
+}
+
+.skills-icon {
+  font-size: 30px;
+  color: #AE388B;
+  letter-spacing: 5px;
+  margin-top: 20px;
 }
 
 .education-profile {
   position: relative;
-  gap: 20px;
+}
+
+.no-bullet {
+  list-style: none;
+}
+
+.css-html {
+  translate: -30px -80px;
+}
+
+.team-player {
+  translate: 30px -80px;
 }
 
 *,

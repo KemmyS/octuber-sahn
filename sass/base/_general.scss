@@ -10,7 +10,7 @@
 }
 
 .container{
-    gap: 60px;
+    // gap: 60px;
 }
 
 .main-nav{
@@ -50,6 +50,7 @@ color: #0d6efd;
     grid-area: portfolio;
 }
 .education-skills{
+  gap: 20px;
     grid-area: education-skills;
 }
 
@@ -148,8 +149,7 @@ grid-template-columns: 1fr;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
-  .education-heading,
-  .profile-heading{
+  .edu-headings{
     text-shadow: 3px 3px 20px hsl(216, 98%, 70%),
     -2px 1px 30px hsl(216, 98%, 70%);
 
@@ -179,15 +179,41 @@ grid-template-columns: 1fr;
   }
 
   .card{
+    position: relative;
     background-color:hsl(65, 44%, 90%) ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
+  .card-pin{
+    position: absolute;
+    top: 0;
+    padding-top: 5px;
+    color: #0d6efd;
+  }
+
   .skills{
-    gap: 20px;
+  // gap: 15px;
+}
+  .skills-icon{
+    font-size: 30px;
+    color: #AE388B;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    
 }
 
 .education-profile{
     position: relative;
-    gap: 20px;
+    // gap: 20px;
+}
+
+.no-bullet{
+ list-style: none;
+}
+
+.css-html{
+translate: -30px -80px;
+}
+.team-player{
+translate: 30px -80px;
 }
