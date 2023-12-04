@@ -23,6 +23,13 @@ box-shadow: $box-shadow-lg;
 color: white;
 }
 
+.card-link:hover{
+  background-color:#D3B5E5;
+box-shadow: $box-shadow-lg;
+color: #0d6efd;
+padding: 10px;
+}
+
 .close-btn:hover{
 color: #0d6efd;
 }
@@ -220,7 +227,9 @@ translate: 30px -80px;
 .portfolio{
   grid-area: portfolio;
   position: relative;
-  
+  // border: 2px solid red;
+  margin: 350px auto;
+  // background-color: aqua;
   }
 
 .portfolio-grid-container{
@@ -228,23 +237,28 @@ translate: 30px -80px;
   grid-template-columns: repeat(2, 1fr) ;
   grid-template-rows: repeat(2,1fr) ;
   max-width: 1024px;
-  margin: 350px auto;
+  background-color: #D3B5E5;
+  
   gap: 30px;
-  // transform: translateY(300px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 
+  0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .employee-directory{
-background-color: #AE388B;
+// background-color: #AE388B;
 
 }
 .webApp-dashboard{
-  background-color: #0d6efd;
+  // background-color: #0d6efd;
 }
 
 .game{
-  background-color: aqua;
+  // background-color: aqua;
 }
 
 .product-page{
-  background-color: orangered;
+  // transform: translateY(-180px);
+  // background-color: orangered;
 }
