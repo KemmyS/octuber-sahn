@@ -15,28 +15,28 @@
 
 <body class="container d-flex flex-column justify-content-center align-items-center">
 
-<div class=" nav-intro mw-100 mh-100 d-flex flex-column vw-100 vh-100
+<div class=" nav-intro mw-100 mh-100 d-flex flex-column 
     align-items-center justify-content-evenly"  id="home">
 
     <header class="main-header">
-        <nav class="main-nav ">
-            <ul class="nav fs-2">
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" href="#education">Education & Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" href="#">Contact</a>
-                </li>
+
+      <aside class="menu">
+        <span class="menu__item"></span>
+        <span class="menu__item"></span>
+        <span class="menu__item"></span>
+    </aside>
+
+        <nav class="main-nav hide">
+
+            <ul class="nav-list">
+              <a href="#about" class="nav-link rounded-pill"><li class="nav-item">About</li></a>
+              <a href="#education" class="nav-link rounded-pill"><li class="nav-item">Education & Skills</li></a>
+              <a href="#portfolio" class="nav-link rounded-pill"><li class="nav-item">Portfolio</li></a>
+              <a href="#contact" class="nav-link rounded-pill"><li class="nav-item">Contact</li></a>
+
+               
             </ul>
+
         </nav>
 
     </header>
@@ -249,6 +249,7 @@
 w-100 p-3 h-75 d-inline-block" id="portfolio">
 
     <h2 class="fs-1 text-uppercase text-center edu-headings">Portfolio</h2>
+    <p>All projects are mobile, tablet and desktop compatible.</p>
 
 <div class="portfolio-grid-container">
 
@@ -336,23 +337,22 @@ w-100 p-3 h-75 d-inline-block" id="portfolio">
       
       
     <div class="card product-page w-100 p-3 h-100 d-inline-block" style="width: 18rem;">
-        <img src="/images/game.png" class="card-img-top" alt="...">
+        <img src="/images/shea magic.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center fs-3">Guess the Phrase</h5>
+          <h5 class="card-title text-center fs-3">Shea Magic</h5>
 
         <p class="card-text card-text text-start fs-5 lh-lg">
-            This project is a word guessing game
-           that allow players to guess a random phrase.
-            by click letters from an onscreen keyboard.
+            This project features a product landing page for shea butter cream.
+
         </p>
          
         <div class="git-links text-center fs-4">
-          <a href="https://profound-marzipan-a6b0a8.netlify.app/" class="card-link link-underline-light rounded-pill">
+          <a href="https://stunning-mochi-94b161.netlify.app/" class="card-link link-underline-light rounded-pill">
             <i class="fa-solid fa-desktop"></i>
             <span>Preview</span>
           </a>
 
-          <a href="https://github.com/KemmyS/game-show-app" class="card-link link-underline-light rounded-pill">
+          <a href="https://github.com/KemmyS/shea-butter" class="card-link link-underline-light rounded-pill">
             <i class="fa-brands fa-github"></i>
             <span>GitHub</span>
           </a>
@@ -366,7 +366,7 @@ w-100 p-3 h-75 d-inline-block" id="portfolio">
 
 </div>
 
-<div class="contact"></div>
+<div class="contact" id="contact"></div>
 
 </div>
 

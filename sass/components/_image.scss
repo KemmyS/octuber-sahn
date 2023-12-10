@@ -1,2 +1,7 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+.intro-img{
+   @include responsive-image;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
