@@ -1,0 +1,15 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+.home{
+position: relative;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+transform: translateY(30px);
+background-color: hsl(244, 28%, 95%);
+}
+
+.intro{
+    padding: 5px;
+    height: 100%;
+   transform: translateY(60px);
+}

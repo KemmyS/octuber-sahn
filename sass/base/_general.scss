@@ -1,18 +1,35 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
-// body{
-//   padding-top: 20vh;
-// }
+body{
+  padding: 10px;
+}
+
+.container{
+  gap: 65px;
+  }
+
+  .main-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .overlay {
+        display: none;
+        height: 100vh;
+       position: fixed;
+       inset: 0;
+       background: rgba(0, 0, 0, 0.4);
+       z-index: 100;
+   }
 
 // .intro{
 //     z-index: 2;
 // }
 // 
 
-// .container{
-//     // gap: 60px;
-// }
+// 
 
 // .main-nav{
 // padding-top: 10px;

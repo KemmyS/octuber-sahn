@@ -2,6 +2,14 @@
 @use "../utilities/variables" as *;
 
 .intro-img{
-   @include responsive-image;
+   width: 200px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: absolute;
+    top: -70px;
+    right: 100px;
+    }
+
+    .about-img{
+      width: 200px;
+      margin: 0 auto;
     }

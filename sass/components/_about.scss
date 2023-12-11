@@ -1,0 +1,24 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-intro{
+    width: 100%;
+    height: 100%;
+    // border: 2px solid red;
+}
+
+.about-heading{
+    text-shadow: 3px 3px 20px hsl(216, 98%, 70%),
+    -2px 1px 30px hsl(216, 98%, 70%);
+}
+
+.who-am-i{
+   background-color: hsl(315, 24%, 92%);
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
