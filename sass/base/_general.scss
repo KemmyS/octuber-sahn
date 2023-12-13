@@ -6,6 +6,7 @@ body{
 }
 
 .container{
+  margin-top: 20px;
   gap: 65px;
   }
 
@@ -15,14 +16,14 @@ body{
   }
 
 
-  .overlay {
-        display: none;
-        height: 100vh;
-       position: fixed;
-       inset: 0;
-       background: rgba(0, 0, 0, 0.4);
-       z-index: 100;
-   }
+  // .overlay {
+  //       display: none;
+  //       height: 100vh;
+  //      position: fixed;
+  //      inset: 0;
+  //      background: rgba(0, 0, 0, 0.4);
+  //      z-index: 100;
+  //  }
 
 // .intro{
 //     z-index: 2;
@@ -81,60 +82,8 @@ body{
 //     grid-area: contact;
 // }
 
-// .badge{
-//     background-color:#B9A3D1;
-//     cursor: pointer;
-//     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-// }
+// 
 
-// .badge:hover{
-//     background-color:#0d6efd;
-//     cursor: pointer;
-//     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-// }
-
-// .overlay {
-//     display: none;
-//     height: 100vh;
-//     position: fixed;
-//     inset: 0;
-//     background: rgba(0, 0, 0, 0.4);
-//     z-index: 100;
-// }
-
-// .modal{
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     width: 700px;
-//     height: 550px;
-//     margin: 3% 30%;
-//     background-color: white;
-//     padding: 30px;
-//     font-size: 18px;
-//     line-height: 2;
-//     box-shadow: rgba(211, 181, 229, 0.293) 0px 54px 55px, rgba(211, 181, 229, 0.12) 0px -12px 30px, rgba(211, 181, 229, 0.12) 0px 4px 6px, rgba(211, 181, 229, 0.17) 0px 12px 13px, rgba(211, 181, 229, 0.09) 0px -3px 5px;
-// }
-
-// .close-btn {
-//     position: absolute;
-//     right: 15px;
-//     top: 7px;
-//     cursor: pointer;
-//     font-size: 25px;
-//     transition: all 200ms;
-    
-//   }
-
-//   .hide{
-//     display: none;
-//   }
-
-//   .show{
-//     display: block;
-//   }
 
 //   .education-skills{
 // display: grid;
