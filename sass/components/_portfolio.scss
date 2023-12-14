@@ -1,0 +1,23 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+
+
+.portfolio-container{
+    gap: 30px;
+}
+
+.card-text{
+    // line-height:1.8;
+   
+}
+
+.card-body{
+    // background-color: hsl(206, 73%, 90%);
+    background-color: white;
+}
+
+.card{
+    background-color: hsl(246, 50%, 90%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
