@@ -1,3 +1,77 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
+.education-skills{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.edu-headings{
+    text-shadow: 3px 3px 20px hsl(216, 98%, 70%),
+     -2px 1px 30px hsl(216, 98%, 70%);
+    }
+    
+     .profile-icon{
+     left: 0px;;
+        
+     }
+     .education-icon{
+      right: 0px;}
+    
+      .fa-paperclip{
+      position: absolute;
+       top: 0px;
+       font-size: 25px;
+       color: #9C95DC;
+    
+    }
+      .profile{
+    transform: rotate(5deg);
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    .education{
+          position: relative;
+         transform: rotate(-5deg);
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+         }
+
+         .skills{
+            gap: 15px;
+             }
+
+ .skills-card{
+ position: relative;
+ background-color: hsl(246, 50%, 90%);;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ }
+
+ .skills-card > ul{
+    text-align: center;
+    background-color:#9C95DC;
+    border-radius: 5px;
+    margin: 0 auto;
+   padding: 5px 25px;
+    color: whitesmoke;
+    
+ }
+
+ .skills-icon{
+      font-size: 25px;
+      color: #228CDB;
+     letter-spacing: 5px;
+     margin-top: 20px;}
+
+
+     .card-pin{
+         position: absolute;
+        top: 0;
+         padding-top: 5px;
+       color:  hsl(315, 24%, 50%) 
+    }
+
+ .no-bullet{
+ list-style: none;
+}
+    
