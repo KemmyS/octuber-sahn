@@ -7,17 +7,11 @@
     gap: 30px;
 }
 
-.card-text{
-    // line-height:1.8;
-   
+.card{
+    background-color:$secondary-color-light;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .card-body{
-    // width: 300px;
     background-color: white;
-}
-
-.card{
-    background-color:hsl(206, 73%, 80%);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }

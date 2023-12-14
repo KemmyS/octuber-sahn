@@ -7,6 +7,7 @@
     position: absolute;
     top: -70px;
     right: 100px;
+    animation: 1s linear slidein;
     }
 
     .about-img,
@@ -14,6 +15,7 @@
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       @include responsive-image;
       margin: 0 auto;
+      animation: 1s linear slidein;
     }
 
     .card-img-top{

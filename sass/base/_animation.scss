@@ -1,2 +1,14 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+
+@keyframes slidein {
+    from {
+      transform:translateX(-300px);
+    }
+  
+    to {
+        transform:translateX(0);
+      
+    }
+  }

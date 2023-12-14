@@ -13,11 +13,11 @@
 .about-me-intro{
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
-    background-color: hsl(246, 50%, 90%);
+    background-color: $primary-color-light;
 }
 
 .about-heading{
-    color: #228CDB;
+    color:$secondary-color;
 }
 
 .who-am-i{
@@ -30,12 +30,12 @@
     font-size: 30px;
     letter-spacing: 20px;
     transform: translateY(10px);
-   color: #228CDB;
+   color: $secondary-color;
 }
 
 .about-p{
     text-align: center;
-    background-color:#9C95DC;
+    background-color:$primary-color;
     border-radius: inherit;
     margin: 0 auto;
    padding: 10px;
@@ -53,17 +53,6 @@
     line-height: 1.5;
 }
 
-.badge{
-       background-color:#B9A3D1;
-      cursor: pointer;
-     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-    
-     .badge:hover{
-     background-color:#0d6efd;
-     cursor: pointer;
-     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
 
     .background-heading{
         text-shadow: 3px 3px 20px hsl(216, 98%, 70%),
