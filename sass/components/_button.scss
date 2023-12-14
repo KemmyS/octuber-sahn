@@ -1,2 +1,17 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    background-color:#9C95DC;
+    border-radius: 3px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+
+}
