@@ -75,7 +75,7 @@ body {
   position: relative;
   width: max-content;
   height: max-content;
-  translate: 0 -20px;
+  translate: 0 -30px;
   transition: all 200ms;
   z-index: 100;
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .main-nav.show {
-  translate: 25% 0;
+  translate: 20% 0;
 }
 
 .nav-list {
