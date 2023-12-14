@@ -16,8 +16,17 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    
   }
 
+.arrow{
+  position: fixed;
+  right: 0;
+font-size: 35px;
+color: $primary-color;
+box-shadow: $box-shadow-lg;
+background-color: $secondary-color-light;
+}
 
   // .overlay {
   //       display: none;

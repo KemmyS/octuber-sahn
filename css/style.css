@@ -23,6 +23,15 @@ body {
   gap: 10px;
 }
 
+.arrow {
+  position: fixed;
+  right: 0;
+  font-size: 35px;
+  color: #9C95DC;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  background-color: #a7d1f1;
+}
+
 *,
 *::before,
 *::after {
