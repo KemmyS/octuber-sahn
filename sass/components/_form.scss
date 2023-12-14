@@ -36,6 +36,7 @@ input::placeholder,
 textarea::placeholder{
     text-align: right;
     font-style: italic;
+    transform: translateX(-15px);
 }
 
 input:required:valid {

@@ -15,3 +15,9 @@ button {
     margin-top: 20px;
 
 }
+
+button:hover{
+    background-color:#228CDB;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   }
