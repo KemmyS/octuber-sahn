@@ -15,13 +15,14 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     
   }
 
 .arrow{
   position: fixed;
   right: 0;
+  top: 80%;
 font-size: 35px;
 color: $primary-color;
 box-shadow: $box-shadow-lg;

@@ -28,12 +28,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 .arrow {
   position: fixed;
   right: 0;
+  top: 80%;
   font-size: 35px;
   color: #9C95DC;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -468,13 +469,10 @@ a:visited {
 }
 
 @media (min-width: 768px) {
-  .about {
-    transform: translateY(-50px);
-  }
   .modal {
     height: max-content;
     width: 600px;
-    margin-top: 50px;
+    top: 15%;
     line-height: 2;
   }
 }

@@ -97,14 +97,11 @@ height: 100%;
  }
 
  @media(min-width: 768px){
-
-    .about{
-    transform: translateY(-50px);
-    }
+    
     .modal{
         height: max-content;
         width: 600px;
-        margin-top: 50px;
+        top: 15%;
         line-height: 2;
       
         }
