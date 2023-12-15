@@ -41,3 +41,17 @@ modalClose.addEventListener('click', () => {
 
 });
 
+const mediaQuery = window.matchMedia("(min-width: 768px)")
+
+
+const handleMediaQuery = (event) => {
+  if (event.matches) {
+      removeClass(nav,HIDE_CLASS);
+      addClass(nav,SHOW_CLASS);
+    }
+};
+
+mediaQuery.addEventListener('change', handleMediaQuery);
+
+handleMediaQuery(mediaQuery);
+

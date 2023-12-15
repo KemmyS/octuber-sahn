@@ -6,6 +6,14 @@
     transform: translateX(0);
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   padding: 10px;
 }
@@ -73,6 +81,19 @@ button:hover {
   background-color: #228CDB;
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 200ms;
+}
+
+.close-btn:hover {
+  color: #9C95DC;
 }
 
 fieldset {
@@ -161,6 +182,17 @@ textarea {
   gap: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main-content {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    padding: 15px;
+    margin: 0 auto;
+    grid-template-areas: "about" "education-skills" "portfolio" "contact";
+  }
+}
 .intro-img {
   width: 200px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -187,6 +219,17 @@ textarea {
   width: 310px;
 }
 
+@media (min-width: 768px) {
+  .intro-img {
+    position: relative;
+    width: 600px;
+    top: 0;
+    right: 0;
+  }
+  .card-img-top {
+    width: 600px;
+  }
+}
 .nav-intro {
   height: 100%;
   max-height: 100%;
@@ -293,11 +336,32 @@ a:visited {
   height: 100%;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: row;
+    translate: -15px 5px;
+  }
+  .main-nav.show {
+    text-align: center;
+    translate: 0;
+    background-color: #dbd9f2;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 200ms;
+  }
+}
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transform: translateY(30px);
   background-color: hsl(244, 28%, 95%);
+  width: 100%;
 }
 
 .intro {
@@ -306,6 +370,16 @@ a:visited {
   transform: translateY(60px);
 }
 
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    background-color: white;
+    box-shadow: none;
+  }
+  .intro {
+    transform: translateY(3px);
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -384,15 +458,6 @@ a:visited {
   box-shadow: rgba(211, 181, 229, 0.293) 0px 54px 55px, rgba(211, 181, 229, 0.12) 0px -12px 30px, rgba(211, 181, 229, 0.12) 0px 4px 6px, rgba(211, 181, 229, 0.17) 0px 12px 13px, rgba(211, 181, 229, 0.09) 0px -3px 5px;
 }
 
-.close-btn {
-  position: absolute;
-  right: 15px;
-  top: 7px;
-  cursor: pointer;
-  font-size: 25px;
-  transition: all 200ms;
-}
-
 .hide {
   display: none;
 }
@@ -401,6 +466,17 @@ a:visited {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .about {
+    transform: translateY(-50px);
+  }
+  .modal {
+    height: max-content;
+    width: 600px;
+    margin-top: 50px;
+    line-height: 2;
+  }
+}
 .education-skills {
   display: flex;
   flex-direction: column;

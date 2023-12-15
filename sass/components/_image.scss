@@ -22,3 +22,19 @@
       width: 310px;
       
     }
+
+    @media(min-width: 768px){
+
+      .intro-img{
+        position: relative;
+        width: 600px;
+        top: 0;
+        right: 0;
+         }
+
+         .card-img-top{
+          width: 600px;
+          
+        }
+
+    }

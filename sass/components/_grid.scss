@@ -1,2 +1,9 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+
+@media only screen and (min-width: 768px){
+    .main-content{
+        @include responsive-grid;
+    }
+}

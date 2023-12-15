@@ -34,3 +34,16 @@ button:hover{
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
+
+ .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    cursor: pointer;
+     font-size: 25px;
+    transition: all 200ms;
+         }
+
+         .close-btn:hover{
+            color: $primary-color;
+         }
