@@ -1,6 +1,6 @@
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
-const badge = document.querySelector(".badge");
+const openModal = document.querySelector(".badge");
 const modalClose = document.querySelector(".close-btn");
 const menu = document.querySelector(".menu");
 const nav = document.querySelector(".main-nav");
@@ -14,13 +14,14 @@ const SHOW_CLASS = "show";
 const HIDE_CLASS = "hide";
 const ACTIVE_CLASS = "active";
 
-badge.addEventListener('click', () => {
+openModal.addEventListener('click', () => {
     overlay.classList.remove("hide");
     overlay.classList.add("show");
   })
 
 modalClose.addEventListener('click', () => {
-    overlay.classList.remove("show");
+    overlay.classList.remove(SHOW_CLASS);
+    overlay.classList.add(HIDE_CLASS);
   })
 
 

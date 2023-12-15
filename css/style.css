@@ -435,8 +435,9 @@ a:visited {
 }
 
 .overlay {
-  display: none;
-  height: 100vh;
+  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -444,7 +445,7 @@ a:visited {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -454,7 +455,7 @@ a:visited {
   background-color: white;
   padding: 20px;
   line-height: 1.5;
-  margin: 0 auto;
+  left: 12%;
   box-shadow: rgba(211, 181, 229, 0.293) 0px 54px 55px, rgba(211, 181, 229, 0.12) 0px -12px 30px, rgba(211, 181, 229, 0.12) 0px 4px 6px, rgba(211, 181, 229, 0.17) 0px 12px 13px, rgba(211, 181, 229, 0.09) 0px -3px 5px;
 }
 
