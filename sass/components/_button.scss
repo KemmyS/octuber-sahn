@@ -23,13 +23,15 @@ button:hover{
    }
 
 
-.badge{
+.about-badge{
+    border-radius: 25px;
+    padding: 5px;
     background-color:$primary-color;
    cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
  
-  .badge:hover{
+  .about-badge:hover{
   background-color:$secondary-color;
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;

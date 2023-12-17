@@ -3,6 +3,10 @@
 
 .contact{
     grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 fieldset {
@@ -88,10 +92,4 @@ textarea {
     border-radius: 3px;
     outline: none;
     margin-top: 15px;
-}
-
-
-
-.contact-incon{
-gap: 20px;
 }

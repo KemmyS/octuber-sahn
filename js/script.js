@@ -1,6 +1,6 @@
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".badge");
+const openModal = document.querySelector(".about-badge");
 const modalClose = document.querySelector(".close-btn");
 const menu = document.querySelector(".menu");
 const nav = document.querySelector(".main-nav");
