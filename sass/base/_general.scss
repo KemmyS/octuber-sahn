@@ -11,11 +11,17 @@ body{
   }
 
   .main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 15px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "about"
+    "education-skills"
+    "portfolio"
+    "contact"
     
   }
 
@@ -28,157 +34,3 @@ color: $primary-color;
 box-shadow: $box-shadow-lg;
 background-color: $secondary-color-light;
 }
-
-  // .overlay {
-  //       display: none;
-  //       height: 100vh;
-  //      position: fixed;
-  //      inset: 0;
-  //      background: rgba(0, 0, 0, 0.4);
-  //      z-index: 100;
-  //  }
-
-// .intro{
-//     z-index: 2;
-// }
-// 
-
-// 
-
-// .main-nav{
-// padding-top: 10px;
-// }
-
-// .nav-link:hover{
-// background-color:#D3B5E5;
-// box-shadow: $box-shadow-lg;
-// color: white;
-// }
-
-// .card-link:hover{
-//   background-color:#D3B5E5;
-// box-shadow: $box-shadow-lg;
-// color: #0d6efd;
-// padding: 10px;
-// }
-
-// .close-btn:hover{
-// color: #0d6efd;
-// }
-
-// .main-content{
-//     @include responsive-grid;
-// }
-// .nav-intro{
-//  grid-area: nav-intro;
-// }
-
-// .home{
-   
-//     padding-bottom: 10px;
-// }
-// .about{
-//     display: grid;
-//     grid-template-columns: 1fr 2fr;
-//     grid-area: about;
-//     background-color: hsla(198, 53%, 85%, 0.242);
-//     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-// }
-
-// .education-skills{
-//   gap: 20px;
-//     grid-area: education-skills;
-// }
-
-// .contact{
-//     grid-area: contact;
-// }
-
-// 
-
-
-//   .education-skills{
-// display: grid;
-// grid-template-columns: 1fr;
-//   }
-
-//   .graduation-photo{
-//   display: flex;
-//   flex-direction: column;
-//  gap: 10px;
-//   align-items: center;
-//   transform: translateY(50px);
-//   }
-
-//   .grad-radius{
-//     background-color: hsl(278, 48%, 85%);
-//     width: 300px;
-//     height: 300px;
-//     border-radius: 100%;
-//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-//     // transform: translateX(-130px);
-//   }
-
-//   .grad-pic{
-//     @include responsive-image;
-//     width: 250px;
-//     height: 250px;
-//     border: 4px solid white;
-//     margin: 20px auto;
-//   }
-
-//  
-//  
-
-//   
-
-//   
-//  
-
-// .education-profile{
-//     position: relative;
-//     // gap: 20px;
-// }
-
-
-
-
-// .portfolio{
-//   grid-area: portfolio;
-//   position: relative;
-//   // border: 2px solid red;
-//   margin: 350px auto;
-//   // background-color: aqua;
-//   }
-
-// .portfolio-grid-container{
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr) ;
-//   grid-template-rows: repeat(2,1fr) ;
-//   max-width: 1024px;
-//   background-color: #D3B5E5;
-  
-//   gap: 30px;
-//   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-//   rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-//   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 
-//   0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-// }
-
-// .employee-directory{
-// // background-color: #AE388B;
-
-// }
-// .webApp-dashboard{
-//   // background-color: #0d6efd;
-// }
-
-// .game{
-//   // background-color: aqua;
-// }
-
-// .product-page{
-//   // transform: translateY(-180px);
-//   // background-color: orangered;
-// }
