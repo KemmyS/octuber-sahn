@@ -255,7 +255,6 @@ textarea {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
   max-height: 100%;
 }
 
@@ -368,7 +367,7 @@ a:visited {
   position: relative;
   background-color: hsl(244, 28%, 95%);
   width: 100%;
-  transform: translateY(-40px);
+  height: 100vh;
 }
 
 .intro {
