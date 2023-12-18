@@ -32,7 +32,6 @@ body{
     "about-me"
     "education-skills"
     "portfolio"
-    "contact"
     "footer"
     
   }
@@ -57,14 +56,22 @@ background-color: $secondary-color-light;
 
 .footer{
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+   gap: 50px;
   transform: translateY(300px);
+  height: 100%;
 }
 
 .contact-links{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  font-size: 18px;
+  transform: translateY(-40px);
 }
 
 

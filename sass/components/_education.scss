@@ -19,10 +19,16 @@ margin: 0 auto;
 line-height: 2;
 }
 
+.education{
+   transform: rotate(-7deg);
+}
+.profile{
+   transform: rotate(7deg);
+}
+
 .education,
 .profile{
   background-color: $primary-color-light;
-  transform: rotate(-7deg);
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

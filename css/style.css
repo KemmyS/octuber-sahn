@@ -41,7 +41,7 @@ body {
   gap: 50px;
   padding: 15px;
   margin: 0 auto;
-  grid-template-areas: "about-me" "education-skills" "portfolio" "contact" "footer";
+  grid-template-areas: "about-me" "education-skills" "portfolio" "footer";
 }
 
 .heading {
@@ -62,14 +62,22 @@ body {
 
 .footer {
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
   transform: translateY(300px);
+  height: 100%;
 }
 
 .contact-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  font-size: 18px;
+  transform: translateY(-40px);
 }
 
 @media (min-width: 768px) {
@@ -90,37 +98,20 @@ body {
   font: inherit;
 }
 
-.button {
+button {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  width: 100%;
-  background-color: #9C95DC;
-  border-radius: 3px;
-  padding: 15px;
-  color: white;
-  font-size: 20px;
-  border: none;
-  margin-top: 20px;
-}
-
-.button:hover {
-  background-color: #228CDB;
-  cursor: pointer;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.about-badge {
   width: max-content;
-  border-radius: 25px;
-  padding: 3px;
   background-color: #9C95DC;
-  cursor: pointer;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 25px;
+  color: #417B5A;
+  border: none;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.about-badge:hover {
+button:hover {
   background-color: #228CDB;
+  color: white;
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -138,108 +129,6 @@ body {
   color: #9C95DC;
 }
 
-.contact {
-  grid-area: contact;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  transform: translateY(300px);
-  padding: 10px;
-}
-
-form {
-  padding: 5px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-}
-
-fieldset {
-  border: none;
-}
-
-input {
-  width: 100%;
-  padding: 18px;
-  border: none;
-  outline: none;
-  background-color: hsla(210, 9%, 83%, 0.302);
-  margin-bottom: 20px;
-  margin-top: 5px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=number],
-textarea {
-  transition: all 300ms;
-}
-
-input[type=text]:focus,
-input[type=tel]:focus,
-input[type=number]:focus,
-textarea:focus {
-  border: 1px solid #1f2d3d;
-}
-
-input::placeholder,
-textarea::placeholder {
-  text-align: right;
-  font-style: italic;
-  transform: translateX(-15px);
-}
-
-input:required:valid {
-  transition: all 2s;
-  background-image: url(/images/check.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-  border: 1px solid lightgreen;
-}
-
-input:required:valid:focus {
-  border: 1px solid lightgreen;
-}
-
-input:required:invalid:not(:focus):not(:placeholder-shown) {
-  border: 1px solid red;
-}
-
-input:required:invalid:not(:focus):placeholder-shown,
-input:required:invalid:not(:focus) {
-  background-image: url(/images/asterisk.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-}
-
-input:required:invalid:focus {
-  border: 1px solid red;
-  background-image: url(/images/asterisk.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-}
-
-textarea {
-  width: 100%;
-  height: 110px;
-  padding: 18px;
-  background-color: hsla(210, 9%, 83%, 0.302);
-  border: none;
-  border-radius: 3px;
-  outline: none;
-  margin-top: 15px;
-}
-
-@media (min-width: 768px) {
-  .contact {
-    transform: translateY(700px);
-  }
-}
 .intro-img {
   display: block;
   max-width: 100%;
@@ -425,6 +314,17 @@ a:visited {
   height: 100vh;
 }
 
+.main-heading {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #9C95DC;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .intro {
   padding: 10px;
   text-align: center;
@@ -437,15 +337,6 @@ a:visited {
     background-color: white;
     transform: translateY(-20px);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .main-heading {
-    font-size: 50px;
-    font-weight: bolder;
-    color: #9C95DC;
-  }
-  .name {
-    font-size: 20px;
-    font-weight: bold;
   }
   .intro {
     font-size: 18px;
@@ -572,10 +463,17 @@ a:visited {
   line-height: 2;
 }
 
+.education {
+  transform: rotate(-7deg);
+}
+
+.profile {
+  transform: rotate(7deg);
+}
+
 .education,
 .profile {
   background-color: hsl(244, 28%, 95%);
-  transform: rotate(-7deg);
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
