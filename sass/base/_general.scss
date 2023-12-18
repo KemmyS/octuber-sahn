@@ -61,3 +61,10 @@ background-color: $secondary-color-light;
   align-items: center;
   gap: 30px;
 }
+
+
+@media(min-width:768px) {
+  .footer{
+    transform: translateY(1000px);
+  }
+}

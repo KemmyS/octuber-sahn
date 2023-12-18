@@ -2,30 +2,30 @@
 @use "../utilities/variables" as *;
 
 
-.portfolio-container,
-.skills{
-   display: grid;
-  max-width: 1024px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-//   gap: 20px;
-//   padding: 15px;
-  margin: 0 auto;
-  margin-top: 2%;
-         }
+// .portfolio-container,
+// .skills{
+//    display: grid;
+//   max-width: 1024px;
+//   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+// //   gap: 20px;
+// //   padding: 15px;
+//   margin: 0 auto;
+//   margin-top: 2%;
+//          }
 
 
-@media only screen and (min-width: 768px){
-    .main-content{
-        @include responsive-grid;
-    }
+// @media only screen and (min-width: 768px){
+//     .main-content{
+//         @include responsive-grid;
+//     }
 
-    .education-profile{
-        display: grid;
-        max-width: 1024px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        padding: 15px;
-        margin: 0 auto;
-        margin-top: 2%;
-    }
-}
+//     .education-profile{
+//         display: grid;
+//         max-width: 1024px;
+//         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+//         gap: 20px;
+//         padding: 15px;
+//         margin: 0 auto;
+//         margin-top: 2%;
+//     }
+// }

@@ -99,3 +99,9 @@ textarea {
     outline: none;
     margin-top: 15px;
 }
+
+@media(min-width:768px) {
+    .contact{
+        transform: translateY(1000px);
+    }
+}

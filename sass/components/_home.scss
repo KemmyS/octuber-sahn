@@ -20,16 +20,13 @@ width: 100%;
    margin-top: 20px;
 }
 
-// @media(min-width: 768px){
-//     .home{
-//        flex-direction: row;
-//        background-color: white;
-//        box-shadow: none;
-//     }
+@media(min-width: 768px){
+    .home{
+       flex-direction: row;
+       background-color: white;
+       box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
 
-//     .intro{
-//     transform: translateY(3px);
-//     }
     
 
-// }
+}

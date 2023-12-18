@@ -114,24 +114,24 @@
   }
 
 
-  // @media(min-width: 768px){
+  @media(min-width: 768px){
 
-  //   .menu{
-  //     display: none;
-  //   }
+    .menu{
+      display: none;
+    }
 
-  //   .nav-list{
-  //     flex-direction: row;
-  //     translate:-15px 5px;
+    .nav-list{
+      flex-direction: row;
+      translate:-15px 5px;
       
-  //   }
+    }
 
-  //   .main-nav.show {
-  //     text-align: center;
-  //     translate: 0;
-  //     background-color: $primary-color-light;
-  //     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  //     transition: all 200ms;
-  //   }
+    .main-nav.show {
+      text-align: center;
+      translate: 0;
+      background-color: hsl(206, 73%, 95%);
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      transition: all 200ms;
+    }
 
-  // }
+  }

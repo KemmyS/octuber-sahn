@@ -26,13 +26,21 @@ line-height: 2;
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+
+.profile-icon{
+   left: 0px;;
+      
+   }
+   .education-icon{
+    right: 0px;
+   }
+
    .fa-paperclip{
    position: absolute;
     top: 0px;
     font-size: 25px;
-    color: #9C95DC;
-    right: 0px;
- 
+       color: $primary-color;
  }
 
  .degree{
@@ -81,9 +89,47 @@ line-height: 2;
    }
 
 
-// @media (min-width: 768px) {
-//    // .education-profile{
-//    //    flex-direction: row;
-//    // }
-// }
+@media (min-width: 768px) {
+   .education-profile{
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      gap:15px;
+      transform: translateY(170px);
+   }
+
+   .education,
+   .profile{
+      width: 200px;
+      padding: 5px;
+     
+   }
+   .profile{
+      transform: rotate(7deg);
+   }
+
+
+   .education{
+      transform: rotate(-7deg);
+      font-size: 12px;
+     }
+
+     .skills{
+      flex-direction: row;
+      transform: translateY(380px);
+      position: relative;
+     }
+.skills-heading{
+position: absolute;
+top: 10px;
+right: 50%;
+}
+
+ .skills-card{
+   width: 230px;
+   padding: 5px;
+   transform: translateY(35px);
+}
+
+}
     

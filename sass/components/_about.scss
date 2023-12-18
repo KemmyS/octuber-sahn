@@ -63,7 +63,6 @@ line-height: 2;
     background-color: white;
     padding:20px;
     line-height: 1.5;
-    // margin: 0 auto;
     left: 12%;
     box-shadow: rgba(211, 181, 229, 0.293) 0px 54px 55px, rgba(211, 181, 229, 0.12) 0px -12px 30px, rgba(211, 181, 229, 0.12) 0px 4px 6px, rgba(211, 181, 229, 0.17) 0px 12px 13px, rgba(211, 181, 229, 0.09) 0px -3px 5px;
    }
@@ -81,13 +80,31 @@ line-height: 2;
     
 
 
-//  @media(min-width: 768px){
-    
-//     .modal{
-//         height: max-content;
-//         width: 600px;
-//         top: 15%;
-//         line-height: 2;
+ @media(min-width: 768px){
+
+    .about-me{
+        transform: translateY(150px);
+    }
+
+ .about-me-intro,
+.about-img-div,
+.my-story{
+width: 600px;
+padding: 0 20px;
+
+}
+
+.about-introduction,
+.about-p{
+    background-color:white;
+    box-shadow: none;
+}
+
+    .modal{
+        height: max-content;
+        width: 600px;
+        top: 15%;
+        line-height: 2;
       
-//         }
-//  }
+        }
+ }

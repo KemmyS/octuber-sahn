@@ -59,6 +59,11 @@ body {
   gap: 30px;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    transform: translateY(1000px);
+  }
+}
 *,
 *::before,
 *::after {
@@ -214,33 +219,9 @@ textarea {
   margin-top: 15px;
 }
 
-.portfolio-container,
-.skills {
-  display: grid;
-  max-width: 1024px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 0 auto;
-  margin-top: 2%;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-content {
-    display: grid;
-    max-width: 1024px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
-    padding: 15px;
-    margin: 0 auto;
-    grid-template-areas: "about" "education-skills" "portfolio" "contact";
-  }
-  .education-profile {
-    display: grid;
-    max-width: 1024px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 15px;
-    margin: 0 auto;
-    margin-top: 2%;
+@media (min-width: 768px) {
+  .contact {
+    transform: translateY(1000px);
   }
 }
 .intro-img {
@@ -268,6 +249,11 @@ textarea {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .intro-img {
+    width: 600px;
+  }
+}
 .nav-intro-div {
   display: flex;
   flex-direction: column;
@@ -377,6 +363,22 @@ a:visited {
   height: 100%;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: row;
+    translate: -15px 5px;
+  }
+  .main-nav.show {
+    text-align: center;
+    translate: 0;
+    background-color: hsl(206, 73%, 95%);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 200ms;
+  }
+}
 .home {
   display: flex;
   flex-direction: column-reverse;
@@ -394,6 +396,13 @@ a:visited {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+}
 .about-me {
   grid-area: about-me;
   display: flex;
@@ -466,6 +475,28 @@ a:visited {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .about-me {
+    transform: translateY(150px);
+  }
+  .about-me-intro,
+  .about-img-div,
+  .my-story {
+    width: 600px;
+    padding: 0 20px;
+  }
+  .about-introduction,
+  .about-p {
+    background-color: white;
+    box-shadow: none;
+  }
+  .modal {
+    height: max-content;
+    width: 600px;
+    top: 15%;
+    line-height: 2;
+  }
+}
 .education-skills {
   grid-area: education-skills;
   display: flex;
@@ -492,12 +523,19 @@ a:visited {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.profile-icon {
+  left: 0px;
+}
+
+.education-icon {
+  right: 0px;
+}
+
 .fa-paperclip {
   position: absolute;
   top: 0px;
   font-size: 25px;
   color: #9C95DC;
-  right: 0px;
 }
 
 .degree {
@@ -545,6 +583,42 @@ a:visited {
   color: #9C95DC;
 }
 
+@media (min-width: 768px) {
+  .education-profile {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 15px;
+    transform: translateY(170px);
+  }
+  .education,
+  .profile {
+    width: 200px;
+    padding: 5px;
+  }
+  .profile {
+    transform: rotate(7deg);
+  }
+  .education {
+    transform: rotate(-7deg);
+    font-size: 12px;
+  }
+  .skills {
+    flex-direction: row;
+    transform: translateY(380px);
+    position: relative;
+  }
+  .skills-heading {
+    position: absolute;
+    top: 10px;
+    right: 50%;
+  }
+  .skills-card {
+    width: 230px;
+    padding: 5px;
+    transform: translateY(35px);
+  }
+}
 .portfolio {
   grid-area: portfolio;
   display: flex;
@@ -585,6 +659,16 @@ a:visited {
 
 .link {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    transform: translateY(900px);
+  }
+  .portfolio-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
