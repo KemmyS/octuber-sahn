@@ -512,7 +512,8 @@ a:visited {
   display: block;
   max-width: 100%;
   max-height: 100%;
-  width: 320px;
+  width: 280px;
+  padding-left: 25px;
   height: 100%;
   position: relative;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -644,6 +645,11 @@ a:visited {
   align-items: center;
 }
 
+.project-title {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .link {
   text-decoration: none;
 }
@@ -667,10 +673,6 @@ a:visited {
   }
   .portfolio {
     transform: translateY(600px);
-  }
-  .project-title {
-    font-size: 20px;
-    font-weight: bolder;
   }
   .project-card {
     width: 330px;

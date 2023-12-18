@@ -41,6 +41,11 @@ animation: 2s linear fadein;
     align-items: center;
 }
 
+.project-title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 .link{
     text-decoration: none;
    
@@ -71,10 +76,6 @@ animation: 2s linear fadein;
         transform: translateY(600px);
     }
 
-    .project-title{
-        font-size: 20px;
-        font-weight: bolder;
-    }
 
 .project-card{
     width:330px ;
