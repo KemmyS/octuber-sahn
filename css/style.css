@@ -258,7 +258,7 @@ button:hover {
   height: 100%;
   cursor: pointer;
 }
-.nav-list > a {
+.nav-list a {
   text-decoration: none;
 }
 
