@@ -700,6 +700,12 @@ a:visited {
   .skills-heading {
     top: -20px;
   }
+  .education {
+    font-size: 16px;
+  }
+  .degree {
+    font-size: 20px;
+  }
 }
 .portfolio {
   grid-area: portfolio;
@@ -742,6 +748,14 @@ a:visited {
 
 .link {
   text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+  transition: all 200ms;
+  background-color: #228CDB;
+  padding: 0 5px;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
