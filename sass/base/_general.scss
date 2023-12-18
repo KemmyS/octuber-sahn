@@ -28,10 +28,12 @@ body{
     "education-skills"
     "portfolio"
     "contact"
+    "footer"
     
   }
 
   .heading{
+    font-size: 35px;
       text-shadow: 3px 3px 20px hsl(216, 98%, 70%),
  -2px 1px 30px hsl(216, 98%, 70%);
   }
@@ -46,4 +48,16 @@ z-index: 100;
 color: $primary-color;
 box-shadow: $box-shadow-lg;
 background-color: $secondary-color-light;
+}
+
+.footer{
+  grid-area: footer;
+  transform: translateY(350px);
+}
+
+.contact-links{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
 }
