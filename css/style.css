@@ -97,11 +97,13 @@ button:hover {
 }
 
 .about-badge {
+  width: max-content;
   border-radius: 25px;
-  padding: 5px;
+  padding: 3px;
   background-color: #9C95DC;
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-bottom: 30px;
 }
 
 .about-badge:hover {
