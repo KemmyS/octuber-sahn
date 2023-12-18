@@ -62,6 +62,7 @@ body {
 @media (min-width: 768px) {
   .footer {
     transform: translateY(900px);
+    padding-bottom: 20px;
   }
 }
 *,
@@ -254,6 +255,11 @@ textarea {
     width: 600px;
   }
 }
+@media (min-width: 1024px) {
+  .intro-img {
+    width: 1000px;
+  }
+}
 .nav-intro-div {
   display: flex;
   flex-direction: column;
@@ -400,6 +406,7 @@ a:visited {
   .home {
     flex-direction: row;
     background-color: white;
+    transform: translateY(-20px);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
 }
@@ -495,6 +502,12 @@ a:visited {
     width: 600px;
     top: 15%;
     line-height: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .my-story {
+    display: flex;
+    width: 100%;
   }
 }
 .education-skills {
@@ -619,6 +632,22 @@ a:visited {
     transform: translateY(35px);
   }
 }
+@media (min-width: 1024px) {
+  .education-profile,
+  .skills {
+    width: 100%;
+  }
+  .education,
+  .profile {
+    width: 300px;
+  }
+  .skills-card {
+    width: 300px;
+  }
+  .skills-heading {
+    top: -20px;
+  }
+}
 .portfolio {
   grid-area: portfolio;
   display: flex;
@@ -668,6 +697,17 @@ a:visited {
   .portfolio-container {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .project-card {
+    width: 330px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio {
+    width: 100%;
+  }
+  .project-card {
+    width: 400px;
   }
 }
 

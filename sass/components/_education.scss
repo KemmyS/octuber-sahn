@@ -132,4 +132,28 @@ right: 50%;
 }
 
 }
+
+
+
+@media (min-width: 1024px){
+   .education-profile,
+   .skills{
+      width: 100%;
+   }
+
+   .education,
+   .profile{
+      width: 300px;
+     
+   }
+
+   .skills-card{
+      width: 300px;
+      
+   }
+
+   .skills-heading{
+      top: -20px;
+      }
+}
     

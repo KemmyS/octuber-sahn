@@ -66,5 +66,6 @@ background-color: $secondary-color-light;
 @media(min-width:768px) {
   .footer{
     transform: translateY(900px);
+    padding-bottom: 20px;
   }
 }

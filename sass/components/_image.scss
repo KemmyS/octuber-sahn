@@ -31,6 +31,12 @@
       .intro-img{
         width: 600px;
       }
+      }
+
+    @media (min-width:1024px) {
+      .intro-img{
+        width: 1000px;
+      }
     }
 
 
