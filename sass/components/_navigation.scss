@@ -1,7 +1,7 @@
-@use "../utilities/mixins" as *;
-@use "../utilities/variables" as *;
+@use "../utilities/mixins"as *;
+@use "../utilities/variables"as *;
 
-.nav-intro-div{
+.main-header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,134 +9,128 @@
   max-height: 100%;
 }
 
-.main-header {
-    margin: 10px auto;
-    width: 100%;
-    height: 100%;
-    padding: 15px 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-  }
-
+.nav-intro-div {
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    position: relative;
-    width: max-content;
-    height: max-content;
-    translate: 0 -30px;
-    transition: all 200ms;
-    z-index: 100;
-  }
-  
-  .menu.active {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  width: max-content;
+  height: max-content;
+  translate: 0 -30px;
+  transition: all 200ms;
+  z-index: 100;
+
+  &.active {
     translate: -70vw 25px;
+
+    & > *:first-child {
+      background-color: #B7B6C1;
+    }
+
+    & > *:nth-child(2) {
+      background-color: #B7B6C1;
+    }
+    
+    & > *:last-child {
+      background-color: #B7B6C1;
+    }
   }
-  
-  .menu.active > *:first-child {
-    background-color: #B7B6C1;
-  }
-  
-  .menu.active > *:nth-child(2) {
-    background-color: #B7B6C1;
-  }
-  
-  .menu.active > *:last-child {
-    background-color: #B7B6C1;
-  }
-  
+
   .menu__item {
     border-radius: 3px;
     width: 33px;
     height: 4px;
-   background-color: $secondary-color-light;
+    background-color: $secondary-color-light;
     transition: all 200ms;
   }
+}
 
-  .main-nav  {
-    width: 100%;
-    height: 100%;
-    transition: all 200ms;
-  }
-  
-  .main-nav.hide {
+.main-nav {
+  width: 100%;
+  height: 100%;
+  transition: all 200ms;
+
+  &.hide {
     translate: -125% -20px;
   }
-  
-  .main-nav.show {
+
+  &.show {
     translate: 20% -20px;
   }
-  
-  .nav-list {
-    font-family: 'DM Serif Display', serif;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #464655;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .nav-list > a {
+}
+
+.nav-list {
+  font-family: 'DM Serif Display', serif;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #464655;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  & > a {
     text-decoration: none;
   }
-  
-  a{
+}
+
+a {
+  color: #4F518C;
+
+  &:visited {
     color: #4F518C;
   }
-  
-  a:visited{
-    color: #4F518C;
-  }
-  
-  .nav-link:hover{
-  color:white;
+}
+
+.nav-link:hover {
+  color: white;
   transition: all 200ms;
-  background-color:#DABFFF;
+  background-color: #DABFFF;
   padding: 10px;
   border-radius: 50%;
+}
+
+.nav-item {
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 768px) {
+
+  .menu {
+    display: none;
   }
 
-  .nav-item {
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .main-nav.show {
+    padding: 10px;
     width: 100%;
     height: 100%;
+    text-align: center;
+    translate: 0;
+    background-color: hsl(206, 73%, 95%);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 200ms;
   }
 
-
-  @media(min-width: 768px){
-
-    .menu{
-      display: none;
-    }
-
-    .nav-list{
-      flex-direction: row;
-    }
-
-    .main-nav.show {
-      padding: 10px;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      translate: 0;
-      background-color: hsl(206, 73%, 95%);
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-      transition: all 200ms;
-    }
-
-  }
-
-  @media(min-width: 1024px){
-
-  }
+}

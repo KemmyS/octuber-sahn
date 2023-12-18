@@ -1,7 +1,7 @@
-@use "../utilities/mixins" as *;
-@use "../utilities/variables" as *;
+@use "../utilities/mixins"as *;
+@use "../utilities/variables"as *;
 
-.about-me{
+.about-me {
     grid-area: about-me;
     display: flex;
     flex-direction: column;
@@ -16,105 +16,88 @@
 
 .about-me-intro,
 .about-img-div,
-.my-story{
-text-align: center;
-width: 300px;
-margin: 0 auto;
-line-height: 2;
-
+.my-story {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 2;
 }
 
-.about-introduction{
+.about-introduction {
     padding: 0 5px;
     background-color: $primary-color-light;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.about-icon{
+.about-icon {
     font-size: 30px;
     letter-spacing: 20px;
-   color: $primary-color;
+    color: $primary-color;
 }
 
-.about-p{
+.about-p {
     background-color: $primary-color-light;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 
 .overlay {
     display: block;
     width: 100vw !important;
     height: 100vh !important;
-   position: fixed;
+    position: fixed;
     inset: 0;
-   background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 100;
-    }
-   
-    .modal{
-   position: fixed;
+}
+
+.modal {
+    position: fixed;
     display: flex;
-   flex-direction: column;
-   justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   width: 300px;
-   height: 100%;
+    width: 300px;
+    height: 100%;
     background-color: white;
-    padding:20px;
+    padding: 20px;
     line-height: 1.5;
     left: 12%;
     box-shadow: rgba(211, 181, 229, 0.293) 0px 54px 55px, rgba(211, 181, 229, 0.12) 0px -12px 30px, rgba(211, 181, 229, 0.12) 0px 4px 6px, rgba(211, 181, 229, 0.17) 0px 12px 13px, rgba(211, 181, 229, 0.09) 0px -3px 5px;
-   }
-   
-   
-   
-   .hide{
-    display: none;
-   }
-   
-    .show{
-    display: block;
-    }
+}
 
-    
-
-
- @media(min-width: 768px){
-
-    .about-me{
+@media(min-width: 768px) {
+    .about-me {
         transform: translateY(150px);
         font-size: 18px;
     }
 
- .about-me-intro,
-.about-img-div,
-.my-story{
-width: 600px;
-padding: 0 20px;
+    .about-me-intro,
+    .about-img-div,
+    .my-story {
+        width: 600px;
+        padding: 0 20px;
 
-}
+    }
 
-.about-introduction,
-.about-p{
-    background-color:white;
-    box-shadow: none;
-}
+    .about-introduction,
+    .about-p {
+        background-color: white;
+        box-shadow: none;
+    }
 
-    .modal{
+    .modal {
         height: max-content;
         width: 600px;
-        height:100%;
+        height: 100%;
         line-height: 2;
         font-size: 18px;
-      
-        }
- }
 
- @media(min-width: 1024px){
-.my-story{
-display: flex;
-width: 100%;
     }
- }
- 
+}
+
+@media(min-width: 1024px) {
+    .my-story {
+        display: flex;
+        width: 100%;
+    }
+}

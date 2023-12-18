@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch ./sass/styles.scss ./css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "sass --no-source-map --watch sass/styles.scss:css/style.css"
   },
   "repository": {
     "type": "git",

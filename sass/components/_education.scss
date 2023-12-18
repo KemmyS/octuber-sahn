@@ -1,181 +1,184 @@
-@use "../utilities/mixins" as *;
-@use "../utilities/variables" as *;
+@use "../utilities/mixins"as *;
+@use "../utilities/variables"as *;
 
-.education-skills{
+.education-skills {
    grid-area: education-skills;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transform: translateY(150px);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   transform: translateY(150px);
 }
 
 .graduation-photo-div,
-.profile, 
-.education{
-    text-align: center;
-width: 300px;
-margin: 0 auto;
-line-height: 2;
+.profile,
+.education {
+   text-align: center;
+   width: 300px;
+   margin: 0 auto;
+   line-height: 2;
 }
 
-.education{
+.education {
    transform: rotate(-7deg);
 }
-.profile{
+
+.profile {
    transform: rotate(7deg);
 }
 
 .education,
-.profile{
-  background-color: $primary-color-light;
-  position: relative;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.profile {
+   background-color: $primary-color-light;
+   position: relative;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
-.profile-icon{
-   left: 0px;;
-      
-   }
-   .education-icon{
-    right: 0px;
-   }
+.profile-icon {
+   left: 0px;
+   ;
 
-   .fa-paperclip{
+}
+
+.education-icon {
+   right: 0px;
+}
+
+.fa-paperclip {
    position: absolute;
-    top: 0px;
-    font-size: 25px;
-       color: $primary-color;
- }
-
- .degree{
-  font-weight: bold;
-  font-size: 18px;
- }
-
-.skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    transform: translateY(25px);
+   top: 0px;
+   font-size: 25px;
+   color: $primary-color;
 }
 
-
- .skills-card{
-   text-align: start;
-   display: block;
-   max-width: 100%;
-   max-height: 100%;
-   width: 280px;
-   padding-left: 25px;
-   height: 100%;
- position: relative;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
- background-color: $primary-color-light;
+.degree {
+   font-weight: bold;
+   font-size: 18px;
 }
 
- .skills-icon{
-    text-align: center;
-     font-size: 25px;
-    color: $secondary-color;
-    letter-spacing: 5px;
-    margin-top: 20px;}
+.skills {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 20px;
+   transform: translateY(25px);
 
-  .no-bullet{
- list-style: none;
- font-weight: bold;
-}
 
-.card-pin{
-   position: absolute;
-    top: 0;
-    right: 50%;
-    color:$primary-color;
+   &-card {
+      text-align: start;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: 280px;
+      padding-left: 25px;
+      height: 100%;
+      position: relative;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      background-color: $primary-color-light;
    }
 
+   &-icon {
+      text-align: center;
+      font-size: 25px;
+      color: $secondary-color;
+      letter-spacing: 5px;
+      margin-top: 20px;
+   }
+}
+
+.no-bullet {
+   list-style: none;
+   font-weight: bold;
+}
+
+.card-pin {
+   position: absolute;
+   top: 0;
+   right: 50%;
+   color: $primary-color;
+}
 
 @media (min-width: 768px) {
-   .education-profile{
+   .education-profile {
       display: flex;
       flex-direction: row;
       margin: 0 auto;
-      gap:15px;
+      gap: 15px;
       transform: translateY(170px);
    }
 
    .education,
-   .profile{
+   .profile {
       width: 200px;
       padding: 5px;
-     
    }
-   .profile{
+
+   .profile {
       transform: rotate(7deg);
    }
 
-.degree{
-   font-size: 14px;
-   color:#417B5A;
-}
-   .education{
+   .degree {
+      font-size: 14px;
+      color: #417B5A;
+   }
+
+   .education {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
       transform: rotate(-7deg);
       font-size: 13px;
-     }
+   }
 
-     .skills{
+   .skills {
       flex-direction: row;
       transform: translateY(300px);
       position: relative;
-     }
-.skills-heading{
-position: absolute;
-top: 10px;
-right: 50%;
+   }
+
+   .skills-heading {
+      position: absolute;
+      top: 10px;
+      right: 50%;
+   }
+
+   .skills-card {
+      width: 230px;
+      padding: 25px;
+      transform: translateY(35px);
+   }
 }
 
- .skills-card{
-   width: 230px;
-   padding:  25px;
-   transform: translateY(35px);
-}
+@media (min-width: 1024px) {
 
-}
-
-
-
-@media (min-width: 1024px){
    .education-profile,
-   .skills{
+   .skills {
       width: 100%;
    }
 
    .education,
-   .profile{
+   .profile {
       width: 300px;
-     
+
    }
 
-   .skills-card{
+   .skills-card {
       width: 300px;
-      
+
    }
 
-   .skills-heading{
+   .skills-heading {
       top: -20px;
-      }
+   }
 
-      .education{
-         font-size: 16px;
-      }
-      .degree{
-         font-size: 20px;
-      }
+   .education {
+      font-size: 16px;
+   }
+
+   .degree {
+      font-size: 20px;
+   }
 }
-    

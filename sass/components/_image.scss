@@ -1,7 +1,7 @@
-@use "../utilities/mixins" as *;
-@use "../utilities/variables" as *;
+@use "../utilities/mixins"as *;
+@use "../utilities/variables"as *;
 
-    .intro-img{
+.intro-img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -10,42 +10,40 @@
   object-fit: cover;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  border-top:1px solid $secondary-color-light;
-  border-bottom:1px solid $secondary-color-light;
-  border-right:1px solid $secondary-color-light;
-  animation: 1s linear slidein;
-    }
+  border-top: 1px solid $secondary-color-light;
+  border-bottom: 1px solid $secondary-color-light;
+  border-right: 1px solid $secondary-color-light;
+  animation: 1s linear slide-in;
+}
 
-    
-    .about-img,
-    .graduation-photo{
+.about-img,
+.graduation-photo {
   display: block;
   max-width: 100%;
   max-height: 100%;
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
-  animation: 1s linear slidein;
-    } 
-    .project-img{
+  animation: 1s linear slide-in;
+}
+
+.project-img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
-    }
+}
 
-    @media (min-width:768px) {
-      .intro-img{
-        width: 600px;
-      }
-      }
+@media (min-width:768px) {
+  .intro-img {
+    width: 600px;
+  }
+}
 
-    @media (min-width:1024px) {
-      .intro-img{
-        width: 1000px;
-      }
-    }
-
-
+@media (min-width:1024px) {
+  .intro-img {
+    width: 1000px;
+  }
+}

@@ -1,36 +1,33 @@
-@use "../utilities/mixins" as *;
-@use "../utilities/variables" as *;
-
+@use "../utilities/mixins"as *;
+@use "../utilities/variables"as *;
 
 button {
     font-family: 'Open Sans', sans-serif;
     width: max-content;
-    background-color:#9C95DC;
+    background-color: #9C95DC;
     border-radius: 25px;
     color: #417B5A;
     border: none;
-    margin-top:10px;
-    margin-bottom:30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 
+    &:hover {
+        background-color: #228CDB;
+        color: white;
+        cursor: pointer;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
 }
 
-button:hover{
-    background-color:#228CDB;
-    color: white;
-    cursor: pointer;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-   }
-
-   
- .close-btn {
+.close-btn {
     position: absolute;
     right: 15px;
     top: 7px;
     cursor: pointer;
-     font-size: 25px;
+    font-size: 25px;
     transition: all 200ms;
-         }
 
-         .close-btn:hover{
-            color: $primary-color;
-         }
+    &:hover {
+        color: $primary-color;
+    }
+}
