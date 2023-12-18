@@ -5,6 +5,8 @@ const modalClose = document.querySelector(".close-btn");
 const menu = document.querySelector(".menu");
 const nav = document.querySelector(".main-nav");
 
+const formInput = document.querySelectorAll(".contact_input");
+
 
 const hasClass = (element, className) => element.classList.contains(className);
 const addClass = (element, className) => element.classList.add(className);
