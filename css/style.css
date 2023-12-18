@@ -61,7 +61,7 @@ body {
 
 @media (min-width: 768px) {
   .footer {
-    transform: translateY(1000px);
+    transform: translateY(900px);
   }
 }
 *,
@@ -221,7 +221,7 @@ textarea {
 
 @media (min-width: 768px) {
   .contact {
-    transform: translateY(1000px);
+    transform: translateY(800px);
   }
 }
 .intro-img {
@@ -605,7 +605,7 @@ a:visited {
   }
   .skills {
     flex-direction: row;
-    transform: translateY(380px);
+    transform: translateY(300px);
     position: relative;
   }
   .skills-heading {
@@ -663,7 +663,7 @@ a:visited {
 
 @media (min-width: 768px) {
   .portfolio {
-    transform: translateY(900px);
+    transform: translateY(650px);
   }
   .portfolio-container {
     flex-direction: row;
