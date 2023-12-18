@@ -32,8 +32,9 @@ margin: 0 auto;
 line-height: 2;
 padding: 5px;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
+animation: 2s linear fadein;
 }
+
 .project-links{
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +58,12 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 
     .portfolio{
-        transform: translateY(650px);
+        transform: translateY(600px);
+    }
+
+    .project-title{
+        font-size: 20px;
+        font-weight: bolder;
     }
 
 .project-card{

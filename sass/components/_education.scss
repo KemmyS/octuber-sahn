@@ -79,6 +79,7 @@ line-height: 2;
 
   .no-bullet{
  list-style: none;
+ font-weight: bold;
 }
 
 .card-pin{
@@ -108,10 +109,17 @@ line-height: 2;
       transform: rotate(7deg);
    }
 
-
+.degree{
+   font-size: 14px;
+   color:#417B5A;
+}
    .education{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       transform: rotate(-7deg);
-      font-size: 12px;
+      font-size: 13px;
      }
 
      .skills{
@@ -127,7 +135,7 @@ right: 50%;
 
  .skills-card{
    width: 230px;
-   padding: 5px;
+   padding:  25px;
    transform: translateY(35px);
 }
 

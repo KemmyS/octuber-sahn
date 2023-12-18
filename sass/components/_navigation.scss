@@ -6,8 +6,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  // gap: 30px;
-  // height: 100vh;
   max-height: 100%;
 }
 
@@ -75,6 +73,7 @@
   }
   
   .nav-list {
+    font-family: 'DM Serif Display', serif;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -89,7 +88,7 @@
     cursor: pointer;
   }
   
-  .nav-lists > a {
+  .nav-list > a {
     text-decoration: none;
   }
   
@@ -106,6 +105,7 @@
   transition: all 200ms;
   background-color:#DABFFF;
   padding: 10px;
+  border-radius: 50%;
   }
 
   .nav-item {
@@ -122,11 +122,12 @@
 
     .nav-list{
       flex-direction: row;
-      translate:-15px 5px;
-      
     }
 
     .main-nav.show {
+      padding: 10px;
+      width: 100%;
+      height: 100%;
       text-align: center;
       translate: 0;
       background-color: hsl(206, 73%, 95%);

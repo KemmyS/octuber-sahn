@@ -1,7 +1,12 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
+  font-family: 'Hind', sans-serif;
   padding: 10px;
 }
 
@@ -65,7 +70,7 @@ background-color: $secondary-color-light;
 
 @media(min-width:768px) {
   .footer{
-    transform: translateY(900px);
+    transform: translateY(700px);
     padding-bottom: 20px;
   }
 }

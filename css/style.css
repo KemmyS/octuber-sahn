@@ -1,3 +1,11 @@
+@keyframes slidein {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -6,7 +14,12 @@
     opacity: 1;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  font-family: "Hind", sans-serif;
   padding: 10px;
 }
 
@@ -61,7 +74,7 @@ body {
 
 @media (min-width: 768px) {
   .footer {
-    transform: translateY(900px);
+    transform: translateY(700px);
     padding-bottom: 20px;
   }
 }
@@ -224,7 +237,7 @@ textarea {
 
 @media (min-width: 768px) {
   .contact {
-    transform: translateY(800px);
+    transform: translateY(700px);
   }
 }
 .intro-img {
@@ -239,6 +252,7 @@ textarea {
   border-top: 1px solid #a7d1f1;
   border-bottom: 1px solid #a7d1f1;
   border-right: 1px solid #a7d1f1;
+  animation: 1s linear slidein;
 }
 
 .about-img,
@@ -250,6 +264,17 @@ textarea {
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
+  animation: 1s linear slidein;
+}
+
+.project-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  animation: 3s linear fadein;
 }
 
 @media (min-width: 768px) {
@@ -333,6 +358,7 @@ textarea {
 }
 
 .nav-list {
+  font-family: "DM Serif Display", serif;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -347,7 +373,7 @@ textarea {
   cursor: pointer;
 }
 
-.nav-lists > a {
+.nav-list > a {
   text-decoration: none;
 }
 
@@ -364,6 +390,7 @@ a:visited {
   transition: all 200ms;
   background-color: #DABFFF;
   padding: 10px;
+  border-radius: 50%;
 }
 
 .nav-item {
@@ -377,9 +404,11 @@ a:visited {
   }
   .nav-list {
     flex-direction: row;
-    translate: -15px 5px;
   }
   .main-nav.show {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     translate: 0;
     background-color: hsl(206, 73%, 95%);
@@ -409,7 +438,20 @@ a:visited {
     flex-direction: row;
     background-color: white;
     transform: translateY(-20px);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .main-heading {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #9C95DC;
+  }
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .intro {
+    font-size: 18px;
+    line-height: 2;
   }
 }
 .about-me {
@@ -487,6 +529,7 @@ a:visited {
 @media (min-width: 768px) {
   .about-me {
     transform: translateY(150px);
+    font-size: 18px;
   }
   .about-me-intro,
   .about-img-div,
@@ -502,8 +545,9 @@ a:visited {
   .modal {
     height: max-content;
     width: 600px;
-    top: 15%;
+    height: 100%;
     line-height: 2;
+    font-size: 18px;
   }
 }
 @media (min-width: 1024px) {
@@ -589,6 +633,7 @@ a:visited {
 
 .no-bullet {
   list-style: none;
+  font-weight: bold;
 }
 
 .card-pin {
@@ -614,9 +659,17 @@ a:visited {
   .profile {
     transform: rotate(7deg);
   }
+  .degree {
+    font-size: 14px;
+    color: #417B5A;
+  }
   .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     transform: rotate(-7deg);
-    font-size: 12px;
+    font-size: 13px;
   }
   .skills {
     flex-direction: row;
@@ -630,7 +683,7 @@ a:visited {
   }
   .skills-card {
     width: 230px;
-    padding: 5px;
+    padding: 25px;
     transform: translateY(35px);
   }
 }
@@ -680,6 +733,7 @@ a:visited {
   line-height: 2;
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  animation: 2s linear fadein;
 }
 
 .project-links {
@@ -702,7 +756,11 @@ a:visited {
     margin: 0 auto;
   }
   .portfolio {
-    transform: translateY(650px);
+    transform: translateY(600px);
+  }
+  .project-title {
+    font-size: 20px;
+    font-weight: bolder;
   }
   .project-card {
     width: 330px;

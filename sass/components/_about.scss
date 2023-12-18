@@ -84,6 +84,7 @@ line-height: 2;
 
     .about-me{
         transform: translateY(150px);
+        font-size: 18px;
     }
 
  .about-me-intro,
@@ -103,8 +104,9 @@ padding: 0 20px;
     .modal{
         height: max-content;
         width: 600px;
-        top: 15%;
+        height:100%;
         line-height: 2;
+        font-size: 18px;
       
         }
  }
