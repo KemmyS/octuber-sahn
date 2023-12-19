@@ -37,14 +37,24 @@ menu.addEventListener("click", (e) => {
   }
 });
 
+//Sticky NAV
+const navDiv = document.querySelector(".nav-intro-div");
+function headerListener() {
+  const navHeight = navDiv.getBoundingClientRect().height / 10
+  const hasScrolled = window.scrollY > navHeight;
+  navDiv.classList.toggle("sticky-nav", hasScrolled);
+}
+
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 const handleMediaQuery = (event) => {
   if (event.matches) {
     removeClass(nav, HIDE_CLASS);
     addClass(nav, SHOW_CLASS);
+    window.addEventListener("scroll", headerListener);
   } else {
     addClass(nav, HIDE_CLASS);
     removeClass(nav, SHOW_CLASS);
+    window.removeEventListener("scroll", headerListener);
   }
 };
 
