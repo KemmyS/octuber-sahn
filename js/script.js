@@ -13,15 +13,6 @@ const SHOW_CLASS = "show";
 const HIDE_CLASS = "hide";
 const ACTIVE_CLASS = "active";
 
-openModal.addEventListener("click", () => {
-  removeClass(overlay, HIDE_CLASS);
-  addClass(overlay, SHOW_CLASS);
-});
-
-modalClose.addEventListener("click", () => {
-  removeClass(overlay, SHOW_CLASS);
-  addClass(overlay, HIDE_CLASS);
-});
 
 menu.addEventListener("click", (e) => {
   if (!hasClass(menu, ACTIVE_CLASS)) {

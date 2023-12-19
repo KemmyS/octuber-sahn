@@ -411,6 +411,7 @@ a:visited {
   gap: 30px;
   transform: translateY(50px);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: hsl(244, 28%, 95%);
 }
 
 .about-me-intro,
@@ -420,12 +421,6 @@ a:visited {
   width: 300px;
   margin: 0 auto;
   line-height: 2;
-}
-
-.about-introduction {
-  padding: 0 5px;
-  background-color: hsl(244, 28%, 95%);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .about-icon {
@@ -466,26 +461,13 @@ a:visited {
 
 @media (min-width: 768px) {
   .about-me {
-    transform: translateY(150px);
+    flex-direction: row;
+    transform: translateY(50px);
     font-size: 18px;
-  }
-  .about-me-intro,
-  .about-img-div,
-  .my-story {
-    width: 600px;
-    padding: 0 20px;
-  }
-  .about-introduction,
-  .about-p {
     background-color: white;
-    box-shadow: none;
   }
-  .modal {
-    height: max-content;
-    width: 600px;
-    height: 100%;
-    line-height: 2;
-    font-size: 18px;
+  .about-img-div {
+    width: 325px;
   }
 }
 @media (min-width: 1024px) {
@@ -593,7 +575,7 @@ a:visited {
     flex-direction: row;
     margin: 0 auto;
     gap: 15px;
-    transform: translateY(170px);
+    transform: translateY(80px);
   }
   .education,
   .profile {
@@ -617,7 +599,7 @@ a:visited {
   }
   .skills {
     flex-direction: row;
-    transform: translateY(300px);
+    transform: translateY(200px);
     position: relative;
   }
   .skills-heading {

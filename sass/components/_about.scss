@@ -12,6 +12,7 @@
     gap: 30px;
     transform: translateY(50px);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: $primary-color-light;
 }
 
 .about-me-intro,
@@ -21,12 +22,6 @@
     width: 300px;
     margin: 0 auto;
     line-height: 2;
-}
-
-.about-introduction {
-    padding: 0 5px;
-    background-color: $primary-color-light;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .about-icon {
@@ -67,32 +62,17 @@
 
 @media(min-width: 768px) {
     .about-me {
-        transform: translateY(150px);
+        flex-direction: row;
+        transform: translateY(50px);
         font-size: 18px;
-    }
-
-    .about-me-intro,
-    .about-img-div,
-    .my-story {
-        width: 600px;
-        padding: 0 20px;
-
-    }
-
-    .about-introduction,
-    .about-p {
         background-color: white;
-        box-shadow: none;
     }
 
-    .modal {
-        height: max-content;
-        width: 600px;
-        height: 100%;
-        line-height: 2;
-        font-size: 18px;
-
+    .about-img-div
+     { width: 325px;
+    
     }
+    
 }
 
 @media(min-width: 1024px) {
