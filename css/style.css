@@ -45,15 +45,38 @@ body {
   text-shadow: 3px 3px 20px hsl(216, 98%, 70%), -2px 1px 30px hsl(216, 98%, 70%);
 }
 
-.arrow {
+.up-arrow {
   position: fixed;
-  right: 0;
-  bottom: 10px;
-  font-size: 35px;
+  border-radius: 5px;
+  background-color: #9C95DC;
+  right: 15px;
+  bottom: 15px;
   z-index: 100;
+  padding: 5px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.up-arrow:hover {
+  background-color: white;
+  border: 1px solid #9C95DC;
+  scale: 1.1;
+}
+.up-arrow:hover .arrow {
   color: #9C95DC;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  background-color: #a7d1f1;
+}
+.up-arrow a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.up-arrow .arrow {
+  display: inherit;
+  width: inherit;
+  height: inherit;
+  font-size: 30px;
+  color: white;
+  transition: all 200ms;
 }
 
 .footer {
@@ -207,12 +230,12 @@ button:hover {
   position: relative;
   width: max-content;
   height: max-content;
-  translate: 0 -30px;
+  translate: 25px -20px;
   transition: all 200ms;
   z-index: 100;
 }
 .menu.active {
-  translate: -70vw 25px;
+  translate: -70vw -20px;
 }
 .menu.active > *:first-child {
   background-color: #B7B6C1;
@@ -237,10 +260,10 @@ button:hover {
   transition: all 200ms;
 }
 .main-nav.hide {
-  translate: -125% -20px;
+  translate: -1125% 0;
 }
 .main-nav.show {
-  translate: 20% -20px;
+  translate: 60% 0;
 }
 
 .nav-list {
@@ -289,7 +312,8 @@ a:visited {
   .nav-list {
     flex-direction: row;
   }
-  .main-nav.show {
+  .main-nav {
+    display: block;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -298,6 +322,9 @@ a:visited {
     background-color: hsl(206, 73%, 95%);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition: all 200ms;
+  }
+  .main-nav.show {
+    translate: 0;
   }
 }
 .home {

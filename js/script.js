@@ -42,6 +42,9 @@ const handleMediaQuery = (event) => {
   if (event.matches) {
     removeClass(nav, HIDE_CLASS);
     addClass(nav, SHOW_CLASS);
+  } else {
+    addClass(nav, HIDE_CLASS);
+    removeClass(nav, SHOW_CLASS);
   }
 };
 
