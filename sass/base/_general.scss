@@ -88,7 +88,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  transform: translateY(300px);
+  transform: translateY(450px);
   height: 100%;
 }
 
@@ -109,9 +109,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   gap: 30px;
   // border: 2px solid red;
-  transform: translateY(300px);
+    transform: translateY(250px);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
