@@ -58,6 +58,12 @@
 }
 
 @media(min-width:768px) {
+    .portfolio {
+    height: 100vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     padding-top: 100px;
+    }
+
     .portfolio-container {
         display: grid;
         max-width: 1024px;
@@ -67,9 +73,6 @@
         margin: 0 auto;
     }
 
-    .portfolio {
-        transform: translateY(600px);
-    }
 
     .project-card {
         width: 330px;
