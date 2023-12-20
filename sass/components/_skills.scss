@@ -75,17 +75,13 @@
     height: 100vh;
     max-height: 100%;
     padding-top: 40px;
-    // border: 2px solid black;
   }
     
    .skills {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // position: relative;
-   
     width: 100%;
-    // height: 100%;
      transform: translateY(-250px);
  }
 
@@ -105,4 +101,16 @@
  .skills-icon{
     font-size: 35px;
  }
+}
+
+
+@media(min-width:1024px){
+   .skills-card {
+      width: 315px;
+}
+
+.skills-icon{
+   font-size: 55px;
+}
+
 }
