@@ -59,7 +59,9 @@
 
 @media(min-width:768px) {
     .portfolio {
-    height: 100vh;
+        width: 100%;
+        transform: translateY(-50px);
+    height: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
      padding-top: 100px;
     }
@@ -69,8 +71,8 @@
         max-width: 1024px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
         margin: 0 auto;
+
     }
 
 
