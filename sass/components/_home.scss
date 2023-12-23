@@ -10,6 +10,8 @@
    background-color: hsl(244, 28%, 95%);
    width: 100%;
    height: 100vh;
+   animation: move-right 2s linear forwards,
+   fade-in 2s linear forwards;
 }
 
 .intro {
@@ -33,7 +35,6 @@
    .home {
       flex-direction: row;
       background-color: white;
-      transform: translateY(-20px);
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    }
 

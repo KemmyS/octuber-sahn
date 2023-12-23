@@ -9,22 +9,29 @@
   display: block !important;
 }
 
-@keyframes slide-in {
-  from {
-    transform: translateX(300px);
-  }
+.move-right{
+  animation: move-right linear 3s forwards;
+}
+.fade-in{
+  animation: fade-in linear 3s forwards;
+}
 
+@keyframes move-right {
+  from {
+    translate: -100% 0%;
+  }
   to {
-    transform: translateX(0);
+    translate: 0 0;
   }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
+    transform: translateX(0);
   }
-
   to {
     opacity: 1;
+    transform: translateX(10px);
   }
 }

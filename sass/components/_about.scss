@@ -40,9 +40,7 @@
         flex-direction: row;
         height: 100vh;
         font-size: 18px;
-        background-color: white;
-        transform: translateY(-40px);
-      
+        background-color: white; 
     }
 
     .about-img-div
@@ -55,7 +53,7 @@
 @media(min-width: 1024px) {
     .about-img-div { 
         width: 500px;
-        transform: translateX(-130px);
+        // transform: translateX(-130px);
     
     }
 }

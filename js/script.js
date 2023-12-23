@@ -1,7 +1,4 @@
-const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".about-badge");
-const modalClose = document.querySelector(".close-btn");
+
 const menu = document.querySelector(".menu");
 const nav = document.querySelector(".main-nav");
 
@@ -36,8 +33,82 @@ function headerListener() {
   navDiv.classList.toggle("sticky-nav", hasScrolled);
 }
 
+const navbar = document.querySelector(".main-nav");
+// Menu fade animation
+const hoverFade = function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".nav-list").querySelectorAll(".nav-link");
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+  }
+};
+navbar.addEventListener("mouseover", hoverFade.bind(0.3));
+navbar.addEventListener("mouseout", hoverFade.bind(1));
+
+/**
+ * Scrolling Animation
+ */
+ const observation = (entries, observer, slideInClass, fadeClass) => {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  const el = entry.target;
+
+  //add your animations
+  removeClass(el, slideInClass);
+  addClass(el, fadeClass);
+
+  observer.unobserve(entry.target);
+};
+const observationOptions = {
+  root: null,
+  threshold: 0.1,
+};
+
+/**
+ * MAIN CONTENT OBSERVER
+ */
+ const sectionSlides = document.querySelectorAll(".slide")
+ const contentObservation = (entries, observer) => {
+  observation(entries, observer, "move-right", "fade-in");
+};
+const contentObserver = new IntersectionObserver(
+  contentObservation,
+  observationOptions
+);
+
+sectionSlides.forEach((slide) => {
+  contentObserver.observe(slide);
+});
+
+
+// const sectionSlides = document.querySelectorAll(".slide")
+
+
+// function checkSections(e) {
+//   const triggerBottom = (window.innerHeight / 4) * 4;
+
+//   this.forEach((section) => {
+//     const sectionTop = section.getBoundingClientRect().top;
+//     if (sectionTop < triggerBottom) {
+//       section.classList.add("show");
+//     } else {
+//       section.classList.remove("show");
+//     }
+//   });
+// }
+
+// window.addEventListener("scroll", checkSections.bind(sectionSlides));
+
+
+
+
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 const handleMediaQuery = (event) => {
+
   if (event.matches) {
     removeClass(nav, HIDE_CLASS);
     addClass(nav, SHOW_CLASS);
@@ -51,3 +122,6 @@ const handleMediaQuery = (event) => {
 
 mediaQuery.addEventListener("change", handleMediaQuery);
 handleMediaQuery(mediaQuery);
+
+
+
