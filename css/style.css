@@ -735,24 +735,23 @@ a:visited {
     background-color: white;
   }
   .skills {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    transform: translateY(-250px);
   }
   .skills-tip {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .tip-p {
+    font-size: 20px;
+  }
   .skills-card {
-    width: 230px;
-    padding: 25px;
+    width: 500px;
+    height: max-content;
     background-color: white;
   }
   .skills-icon {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 @media (min-width: 1024px) {
