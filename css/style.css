@@ -193,6 +193,7 @@ button:hover {
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .project-img {
@@ -458,7 +459,7 @@ a:visited {
     background-color: white;
   }
   .about-img-div {
-    width: 320px;
+    width: 310px;
   }
 }
 @media (min-width: 1024px) {
@@ -514,13 +515,13 @@ a:visited {
 @media (min-width: 768px) {
   .education-skills {
     height: 100vh;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .education-profile {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    gap: 15px;
   }
   .education,
   .profile {
@@ -627,6 +628,7 @@ a:visited {
   .portfolio {
     width: 100%;
     height: 100%;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding-top: 100px;
   }
@@ -638,7 +640,7 @@ a:visited {
     margin: 0 auto;
   }
   .project-card {
-    width: 330px;
+    width: 320px;
   }
 }
 @media (min-width: 1024px) {
@@ -715,6 +717,7 @@ a:visited {
     height: 100vh;
     max-height: 100%;
     padding-top: 40px;
+    background-color: white;
   }
   .skills {
     flex-direction: row;
