@@ -84,28 +84,35 @@ sectionSlides.forEach((slide) => {
   contentObserver.observe(slide);
 });
 
+const skills = document.querySelector(".skills");
+const backSkillCard = document.querySelectorAll(".back");
 
-// const sectionSlides = document.querySelectorAll(".slide")
+skills.addEventListener("click",(e) => {
+ const pin = e.target;
 
+ if(pin.classList.contains("card-pin")){
+  const parentCard = pin.closest(".skills-card");
+  const front = parentCard.querySelector(".front")
+  const back = parentCard.querySelector(".back")
 
-// function checkSections(e) {
-//   const triggerBottom = (window.innerHeight / 4) * 4;
+  if(front.classList.contains("show")) {
+    front.classList.remove("show");
+    front.classList.add("hide");
+    back.classList.remove("hide");
+    back.classList.add("show");
+  } else{
+    back.classList.remove("show");
+    back.classList.add("hide");
+    front.classList.remove("hide");
+    front.classList.add("show");
+  }
+ }
+ 
+} )
 
-//   this.forEach((section) => {
-//     const sectionTop = section.getBoundingClientRect().top;
-//     if (sectionTop < triggerBottom) {
-//       section.classList.add("show");
-//     } else {
-//       section.classList.remove("show");
-//     }
-//   });
-// }
-
-// window.addEventListener("scroll", checkSections.bind(sectionSlides));
-
-
-
-
+/**
+ * MEDIA QUERY
+ */
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 const handleMediaQuery = (event) => {
 
