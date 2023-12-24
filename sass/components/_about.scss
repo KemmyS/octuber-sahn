@@ -29,10 +29,10 @@
     color: $primary-color;
 }
 
-.about-p {
-    background-color: $primary-color-light;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
+// .about-p {
+//     background-color: $primary-color-light;
+//     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+// }
 
 @media(min-width: 768px) {
     .about-me {
@@ -52,6 +52,11 @@
 
 @media(min-width: 1024px) {
     .about-img-div { 
-        width: 500px;
+        width: 360px;
+    }
+
+    .about-me-div{
+    width: 400px;
+    font-size: 20px;
     }
 }

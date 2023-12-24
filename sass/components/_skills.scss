@@ -93,6 +93,7 @@
     
    .skills {
     width: 100%;
+    gap: 5px;
  }
 
  .skills-tip {
@@ -106,24 +107,16 @@
  }
 
  .skills-card {
-    width: 500px;
+    width: 450px;
    height: max-content;
    background-color: white;
  }
 
  .skills-icon{
-    font-size: 40px;
+    font-size: 35px;
  }
 }
 
 
 @media(min-width:1024px){
-   .skills-card {
-      width: 315px;
-}
-
-.skills-icon{
-   font-size: 55px;
-}
-
 }
