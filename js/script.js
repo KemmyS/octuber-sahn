@@ -84,6 +84,9 @@ sectionSlides.forEach((slide) => {
   contentObserver.observe(slide);
 });
 
+/**
+ * EVENT LISTENER ON SKILL CARDS
+ */
 const skills = document.querySelector(".skills");
 const backSkillCard = document.querySelectorAll(".back");
 

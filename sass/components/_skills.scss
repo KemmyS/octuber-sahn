@@ -85,7 +85,6 @@
 
 
   .skills-section{
-    height: 100vh;
     max-height: 100%;
     padding-top: 40px;
     background-color: white;
@@ -93,7 +92,6 @@
     
    .skills {
     width: 100%;
-    gap: 5px;
  }
 
  .skills-tip {
@@ -115,8 +113,4 @@
  .skills-icon{
     font-size: 35px;
  }
-}
-
-
-@media(min-width:1024px){
 }
