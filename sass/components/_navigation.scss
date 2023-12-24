@@ -7,12 +7,15 @@
   justify-content: space-evenly;
   align-items: center;
   max-height: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 $border-color: hsl(0 0% 50% / 0.3);
 
 .nav-intro-div {
-  margin: 10px auto;
+  // margin: 10px auto;
+  margin: 0 auto;
   margin-top: 20px;
   width: 100%;
   height: 100%;
@@ -74,6 +77,7 @@ $border-color: hsl(0 0% 50% / 0.3);
   width: 100%;
   height: 100%;
   transition: all 200ms;
+  border:  2px solid red;
 
 
   &.hide {
@@ -81,7 +85,8 @@ $border-color: hsl(0 0% 50% / 0.3);
   }
 
   &.show {
-    translate: 45% 0;
+    margin: 0 auto;
+    // translate: 45% 0;
   }
 }
 
@@ -127,6 +132,7 @@ a {
     margin-top: 0;
     border-bottom: 1px solid hsl(0 0% 50% / 0.3);
     padding: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
     transition: height 300ms;
 

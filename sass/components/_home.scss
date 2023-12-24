@@ -4,14 +4,17 @@
 .home {
    display: flex;
    flex-direction: column-reverse;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-items: center;
    position: relative;
    background-color: hsl(244, 28%, 95%);
+   // width: 700px;
    width: 100%;
    height: 100vh;
    animation: move-right 2s linear forwards,
    fade-in 2s linear forwards;
+
+   margin: 0 auto;
 }
 
 .intro {
@@ -33,6 +36,7 @@
 
 @media(min-width: 768px) {
    .home {
+      // background-color: green;
       flex-direction: row;
       background-color: white;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
