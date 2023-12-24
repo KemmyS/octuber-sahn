@@ -87,7 +87,7 @@ sectionSlides.forEach((slide) => {
 const skills = document.querySelector(".skills");
 const backSkillCard = document.querySelectorAll(".back");
 
-skills.addEventListener("click",(e) => {
+skills.addEventListener("click", (e) => {
  const pin = e.target;
 
  if(pin.classList.contains("card-pin")){
