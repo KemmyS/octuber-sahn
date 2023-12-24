@@ -4,7 +4,7 @@
 .home {
    display: flex;
    flex-direction: column-reverse;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
    position: relative;
    background-color: hsl(244, 28%, 95%);
@@ -18,7 +18,7 @@
 .intro {
    padding: 10px;
    text-align: center;
-   margin-top: 20px;
+   // margin-top: 20px;
 
    .main-heading {
       font-size: 50px;
